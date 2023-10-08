@@ -8,7 +8,7 @@ const regexNumber =
   /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/;
 
 //Схема для валідації полів форми
-const schema = object({
+export const schema = object({
   name: string()
     .matches(regexName, 'Name is not valid')
     .min(2, 'Name too short')

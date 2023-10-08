@@ -1,12 +1,11 @@
 import { FcAddDatabase } from 'react-icons/fc';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-
 import { useSelector, useDispatch } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
 import toast from 'react-hot-toast';
 import css from './ContactForm.module.css';
-import schema from './Shema/shema';
+import { schema } from './Schema/schema';
 
 
 export const ContactForm = () => {
